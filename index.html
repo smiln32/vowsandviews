@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vows and Views | Simplify to Glorify</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ivory: #F9F7F2;
+            --sage: #7A9482;
+            --gold: #C5A059;
+            --dark-sage: #5F7465;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--ivory); color: #4A4A4A; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .bg-sage { background-color: var(--sage); }
+        .text-sage { color: var(--sage); }
+        .border-gold { border-color: var(--gold); }
+        .gold-gradient { background: linear-gradient(135deg, #C5A059 0%, #F1D39A 50%, #C5A059 100%); }
+        .sidebar-link:hover { background-color: rgba(122, 148, 130, 0.1); }
+        .card { background: white; border: 1px solid rgba(197, 160, 89, 0.1); border-radius: 12px; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-2px); }
+    </style>
+</head>
+<body class="min-h-screen flex">
+
+    <aside class="w-64 border-r border-gold/20 flex flex-col p-6 hidden md:flex">
+        <div class="mb-10">
+            <h1 class="text-2xl text-sage serif font-bold">Vows & Views</h1>
+            <p class="text-xs tracking-widest uppercase opacity-60">Simplify to Glorify</p>
+        </div>
+        
+        <nav class="space-y-4 flex-1">
+            <a href="#" class="sidebar-link block p-3 rounded-lg text-sage font-semibold">Dashboard</a>
+            <a href="#" class="sidebar-link block p-3 rounded-lg opacity-70">Budget Hub</a>
+            <a href="#" class="sidebar-link block p-3 rounded-lg opacity-70">Guest List</a>
+            <a href="#" class="sidebar-link block p-3 rounded-lg opacity-70 font-semibold border-l-4 border-gold bg-sage/5">Social Media Hub</a>
+            <a href="#" class="sidebar-link block p-3 rounded-lg opacity-70">Timeline</a>
+        </nav>
+
+        <div class="mt-auto pt-6 border-t border-gold/10 text-[10px] opacity-40">
+            © 2026 Simplify to Glorify. <br> Grounded Planning for a Modern Union.
+        </div>
+    </aside>
+
+    <main class="flex-1 p-8 overflow-y-auto">
+        <header class="flex justify-between items-center mb-10">
+            <div>
+                <h2 class="text-3xl serif">Social Media Hub</h2>
+                <p class="text-sm opacity-60">Curating your digital celebration with intention.</p>
+            </div>
+            <div class="flex space-x-4">
+                <button class="px-4 py-2 border border-sage text-sage rounded-md text-sm">Export Guide</button>
+                <button class="px-4 py-2 bg-sage text-white rounded-md text-sm shadow-sm">Save Changes</button>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="card p-6 lg:col-span-1">
+                <h3 class="serif text-xl mb-4 flex items-center">
+                    <span class="w-2 h-2 rounded-full bg-gold mr-2"></span>
+                    Hashtag Brainstorm
+                </h3>
+                <input type="text" placeholder="#OurGroundedUnion" class="w-full p-3 border border-gold/20 rounded-md focus:outline-none focus:border-sage bg-ivory/50">
+                <div class="mt-4 space-y-2">
+                    <div class="text-xs px-3 py-1 bg-sage/10 text-sage rounded-full inline-block mr-2">#MarryingTheMillers</div>
+                    <div class="text-xs px-3 py-1 bg-sage/10 text-sage rounded-full inline-block">#SelahWedding2026</div>
+                </div>
+            </div>
+
+            <div class="card p-6 lg:col-span-2">
+                <h3 class="serif text-xl mb-4">The Launch Grid</h3>
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="aspect-square bg-ivory border border-gold/10 rounded flex items-center justify-center text-[10px] text-center p-2 opacity-50 italic">Vendor Highlight</div>
+                    <div class="aspect-square bg-ivory border border-gold/10 rounded flex items-center justify-center text-[10px] text-center p-2 opacity-50 italic">The Gown Reveal Hint</div>
+                    <div class="aspect-square bg-sage/5 border border-sage/20 rounded flex items-center justify-center text-[10px] text-center p-2 font-semibold">"10 Days To Go"</div>
+                    <div class="aspect-square bg-ivory border border-gold/10 rounded flex items-center justify-center text-[10px] text-center p-2 opacity-50 italic">Bridal Party Intro</div>
+                    <div class="aspect-square bg-ivory border border-gold/10 rounded flex items-center justify-center text-[10px] text-center p-2 opacity-50 italic">Ceremony Sneak Peek</div>
+                    <div class="aspect-square bg-ivory border border-gold/10 rounded flex items-center justify-center text-[10px] text-center p-2 opacity-50 italic">Engagement Throwback</div>
+                </div>
+            </div>
+
+            <div class="card p-6 lg:col-span-3">
+                <h3 class="serif text-xl mb-4">Vendor Tagging Directory</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="border-b border-gold/10 text-left opacity-60">
+                                <th class="pb-3 font-normal">Service</th>
+                                <th class="pb-3 font-normal">Business Name</th>
+                                <th class="pb-3 font-normal">Handle (@)</th>
+                                <th class="pb-3"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gold/5">
+                            <tr>
+                                <td class="py-4">Photography</td>
+                                <td class="py-4">Larkspur Lens</td>
+                                <td class="py-4 text-sage">@larkspurlens</td>
+                                <td class="py-4 text-right"><button class="text-gold">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td class="py-4">Florist</td>
+                                <td class="py-4">Sage & Petal</td>
+                                <td class="py-4 text-sage">@sagepetal_designs</td>
+                                <td class="py-4 text-right"><button class="text-gold">Edit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
